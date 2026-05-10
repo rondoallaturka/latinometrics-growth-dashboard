@@ -38,7 +38,8 @@ col_es, col_sc, col_disc = st.columns(3)
 col_es.metric(
     "Engaged sessions (90d)",
     f"{int(totals.engaged_sessions):,}",
-    f"{int(recent.engaged_sessions):,} last 7d",
+    f"{int(totals.articles_engaged_sessions):,} on articles",
+    delta_color="off",
 )
 col_sc.metric(
     "Search clicks (90d)",
@@ -59,8 +60,11 @@ else:
 
 st.divider()
 
-st.subheader("Engaged sessions")
-st.line_chart(df["engaged_sessions"], height=250)
+st.subheader("Engaged sessions: all site vs articles")
+es_overlay = df[["engaged_sessions", "articles_engaged_sessions"]].rename(
+    columns={"engaged_sessions": "All site", "articles_engaged_sessions": "Articles"}
+)
+st.line_chart(es_overlay, height=250)
 
 st.subheader("Search")
 col1, col2 = st.columns(2)
