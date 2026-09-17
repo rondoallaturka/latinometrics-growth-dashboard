@@ -1,5 +1,4 @@
 date,engaged_sessions,avg_session_duration_s,page_views,articles_engaged_sessions,articles_avg_session_duration_s,articles_page_views,search_clicks,search_impressions,discover_clicks,discover_impressions
-2026-06-17,,,,,,,43,8252,0,0
 2026-06-18,,,,,,,30,7022,0,0
 2026-06-19,,,,,,,25,6139,0,0
 2026-06-20,,,,,,,22,5478,0,0
@@ -89,3 +88,4 @@ date,engaged_sessions,avg_session_duration_s,page_views,articles_engaged_session
 2026-09-12,,,,,,,87,9505,0,0
 2026-09-13,,,,,,,99,9238,0,0
 2026-09-14,,,,,,,130,11957,0,0
+2026-09-15,,,,,,,143,12139,0,0
